@@ -6,7 +6,7 @@ type ConnectionObject = {
 
 const connection: ConnectionObject = {}
 
-async function dbConnect(): Promise<void> { // yeh connection method kuch return karega, yeh hoga promise
+export async function dbConnect(): Promise<void> { // yeh connection method kuch return karega, yeh hoga promise
 
     if (connection.isConnected)
     {

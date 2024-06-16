@@ -29,7 +29,7 @@ export interface User extends Document{ //gives a structure
     verifyCode: string;
     verifyCodeExpiry: Date;
     isVerified: boolean;
-    isAcceptingMessage: boolean;
+    isAcceptingMessages: boolean;
     messages: Message[] // har message ka apna khud ka document hoga so user ke saare messages as an array feed kar denge
 }
 
@@ -62,7 +62,7 @@ const UserSchema: Schema<User> = new Schema({ // uses custom defined data struct
         type: Boolean,
         default: false,
     },
-    isAcceptingMessage: {
+    isAcceptingMessages: {
         type: Boolean,
         default: true,
     },
